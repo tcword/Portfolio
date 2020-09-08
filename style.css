@@ -68,6 +68,7 @@ header {
 
 header.fixed {
   background-color: #ffffff;
+  opacity: 0.9;
   position: fixed;
   border-color: #eeeeee;
   animation: fixHeader 0.5s ease;
@@ -203,9 +204,10 @@ header .navbar ul li a:hover::before {
 
 .home {
   min-height: 100vh;
-  background-image: url("https://thumbs.gfycat.com/ThirstySpeedyIberiannase.webp");
+  background-image: url("./img1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right -260px top;
+  background-color: black;
   padding: 15px;
 }
 
@@ -304,6 +306,8 @@ header .navbar ul li a:hover::before {
 .about-me .about-content .img img {
   width: 100%;
   display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.7);
 }
 
 .about-me .about-content .text {
@@ -503,6 +507,8 @@ header .navbar ul li a:hover::before {
   width: 100%;
   display: block;
   height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.6);
 }
 
 .skills .skills-content .section-title p {
@@ -671,6 +677,11 @@ header .navbar ul li a:hover::before {
   animation: galleryIcon 0.8s ease;
 }
 
+.reactProject {
+  height: 200px;
+  width: auto;
+}
+
 @keyframes galleryIcon {
   0% {
     transform: translateY(-20px);
@@ -720,7 +731,7 @@ header .navbar ul li a:hover::before {
 .email-form {
   background-color: #ffffff;
   flex: 0 0 100%;
-  max-width: 100%;
+  width: auto;
   padding: 40px;
 }
 
@@ -745,7 +756,7 @@ header .navbar ul li a:hover::before {
 }
 
 .email :hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: all 0.5s ease;
 }
 
@@ -762,7 +773,7 @@ footer .logo {
   text-align: center;
   font-size: 45px;
   color: #ffffff;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 footer .social {
@@ -783,7 +794,7 @@ footer .social a {
 
 footer .social a:hover {
   color: #ffffff;
-  transform: scale(2);
+  transform: scale(1.4);
 }
 
 /* Copyright */
@@ -811,6 +822,9 @@ footer .social a:hover {
 }
 
 @media (max-width: 767px) {
+  .home {
+    background-position: right -290px top 50px;
+  }
   .home .home-content .block h1 {
     font-size: 40px;
   }
@@ -887,19 +901,30 @@ footer .social a:hover {
     position: relative;
     padding: 10px;
   }
+  .reactProject {
+    height: auto;
+    width: auto;
+  }
 }
 
 @media (max-width: 500px) {
+  .home {
+    background-position: right -365px top 20px;
+  }
   .home .home-content .block h1 {
     font-size: 30px;
   }
   .home .home-content .block h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .home .home-content .block {
     padding-left: 20px;
   }
   .skills .img img {
     display: none;
+  }
+  .reactProject {
+    height: auto;
+    width: auto;
   }
 }
