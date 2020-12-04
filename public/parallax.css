@@ -1,0 +1,16 @@
+.iphone-11-pro {
+  background: url("./dev.jpg") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: scroll !important;
+  height: 100vh;
+  margin-top: 4.4rem;
+}
+
+ .email-form {
+    width: auto;
+    background-image: url("https://akovia-yymzkigkbk.netdna-ssl.com/wp-content/uploads/2016/08/connect-background-white.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll !important;
+  }

@@ -1,0 +1,1225 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap");
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display");
+
+/* Global */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  display: block;
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+  width: 100%;
+  height: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+  display: none;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  padding: 0 1rem;
+  transition: opacity 0.5s;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.nav-link-apple {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url("apple.svg") center no-repeat;
+}
+
+.nav-link-search {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url("search.svg") center no-repeat;
+}
+
+.nav-link-bag {
+  width: 1.4rem;
+  height: 4.4rem;
+  background: url("bag.svg") center no-repeat;
+}
+
+.iphone-11-pro {
+  background: url("./dev.jpg");
+  background-size: cover;
+  background-attachment: scroll !important;
+  background-position: right 36px bottom -10px;
+  height: 100vh;
+  margin-top: 4.4rem;
+}
+
+.title {
+  text-align: center;
+  justify-content: center;
+  padding-top: 5.5rem;
+  color: white;
+}
+
+.title-heading {
+  font-size: 8.9rem;
+  line-height: 1.07143;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title-sub-heading {
+    font-size: 2.4rem;
+    margin-top: .65rem;
+    letter-spacing: 2.5rem;
+    font-weight: 300;
+  }
+
+.cv-btn {
+  padding-top: 2.6rem;
+  text-align: center;
+}
+
+.cv-btn a {
+  border-radius: 4px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 15px 45px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+.cv-btn a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.section-title h1 {
+  display: inline-block;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.section-title h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: #febd01;
+  bottom: 0px;
+  right: 30%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* About Me */
+
+.about-me {
+  padding: 80px 15px;
+  background-color: #ffffff;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me .section-title p.small {
+  display: block;
+  font-size: 15px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.about-me .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 30px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.7);
+}
+
+.about-me .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me .about-content .text h4 {
+  font-size: 27px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  color: #000000;
+}
+
+.about-me .about-content .text h6 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.about-me .about-content .text h6 span {
+  color: #febd01;
+}
+
+.about-me .about-content .text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #797979;
+  margin: 0 0 12px;
+}
+
+.about-me .about-content .text .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-me .about-content .text .info .list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.about-me .about-content .text .info .list label {
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.about-me .about-content .text .info .list p {
+  margin: 0;
+  padding-top: 1px;
+  font-size: 15px;
+}
+
+.about-me .about-content .text .social-links {
+  padding-top: 30px;
+}
+
+.about-me .about-content .text .social-links a {
+  height: 30px;
+  width: 30px;
+  background-color: #000000;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #000000;
+  text-align: center;
+  margin: 0 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.about-me .about-content .text .social-links a:hover {
+  background-color: transparent;
+}
+
+.about-me .about-content .text .social-links a .fa {
+  color: #ffffff;
+  font-size: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-top: 5px;
+}
+
+.about-me .about-content .text .social-links a:hover .fa {
+  color: #000000;
+}
+
+/* core values */
+
+.values {
+  background-color: #f6f6f6;
+  padding: 100px 15px 70px;
+}
+
+.values .section-title h1:before {
+  left: 30%;
+}
+
+.values .service-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.values .service-content .box {
+  background-color: #ffffff;
+  padding: 30px;
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  border-left: 1px solid #eeeeee;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+}
+
+.values .service-content .box::before {
+  content: "";
+  height: 2px;
+  background-color: #febd01;
+  position: absolute;
+  bottom: 0px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.5s ease;
+}
+
+.values .service-content .box:hover::before {
+  width: 100%;
+}
+
+.values .service-content .box .icon {
+  height: 60px;
+  width: 60px;
+  background-color: #febd01;
+  margin: 15px auto 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.values .service-content .box .icon .fa {
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 60px;
+}
+
+.values .service-content .box h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+.values .service-content .box p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 10px 0 10px;
+}
+
+/* Skills */
+
+.skills {
+  padding: 100px 15px;
+  background-color: #ffffff;
+}
+
+.skills .skills-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+.skills .img {
+  /* background-color: blue; */
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.skills .img img {
+  width: 100%;
+  display: block;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.6);
+}
+
+.skills .skills-content .section-title p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 15px 0 0;
+}
+
+.skills .skills-content .skill-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 27px;
+}
+
+.skills .skills-content .skill-box h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 0 8px;
+}
+
+.skills .skills-content .skill-box .skill-bar {
+  height: 5px;
+  background-color: #eeeeee;
+  position: relative;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    background-color: #838383;
+  }
+  50% {
+    background-color: #febd01;
+  }
+}
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in {
+  background-color: #febd01;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  animation: pulse 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
+}
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span {
+  color: #838383;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
+
+.skills .otherSkills {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.skills .otherSkills h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.skills .otherSkills p {
+  color: #838383;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background-color: #f6f6f6;
+  padding: 100px 15px;
+}
+
+.portfolio .section-title {
+  margin-top: -10px;
+}
+
+.portfolio .section-title h1:before {
+  left: 30%;
+}
+
+.portfolio .section-title p.small {
+  display: block;
+  font-size: 14px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.portfolio .filter-buttons {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.portfolio .filter-buttons p {
+  text-align: center;
+  padding: 0;
+  color: #000000;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0px 8px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.portfolio .filter-buttons ul li {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0px 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 0px;
+}
+
+.portfolio .filter-buttons ul li.active {
+  color: #febd01;
+  border-bottom: 2px solid #febd01;
+}
+
+.portfolio .portfolio-gallery {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.portfolio .portfolio-gallery .item {
+  background-color: white;
+  flex: 0 0 calc(33.33% - 10px);
+  max-width: calc(33.33% - 10px);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.portfolio .portfolio-gallery .item img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio .portfolio-gallery .item .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.portfolio .portfolio-gallery .item .overlay .icons .fa {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 45px;
+}
+
+.portfolio .portfolio-gallery .item:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio .portfolio-gallery .item .overlay .fa {
+  height: 30px;
+  width: 50px;
+  color: #febd01;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-gallery .item:hover .overlay .fa {
+  -webkit-animation: galleryText 0.9s ease;
+  animation: galleryIcon 0.9s ease;
+}
+
+.reactProject {
+  height: 200px;
+  width: auto;
+}
+
+@keyframes galleryIcon {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.portfolio .portfolio-gallery .item .overlay h4 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  font: Poppins;
+}
+
+.portfolio .portfolio-gallery .item:hover .overlay h4 {
+  -webkit-animation: galleryText 0.8s ease;
+  animation: galleryText 0.8s ease;
+}
+
+@keyframes galleryText {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.portfolio .fa {
+  font-size: 45px;
+}
+
+/* Contact Me */
+
+.contact-me {
+  padding-top: 20px 0px;
+  background-color: #f6f6f6;
+  padding-bottom: 100px;
+}
+
+.contact-me .section-title h1:before {
+  left: 30%;
+}
+
+.email-form {
+  background-image: url("https://akovia-yymzkigkbk.netdna-ssl.com/wp-content/uploads/2016/08/connect-background-white.jpg");
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 100%;
+  width: auto;
+  height: auto;
+  padding: 60px;
+  /* background-attachment: fixed; */
+}
+
+.text h5 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.email {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.email-form .email a img {
+  height: auto;
+  width: 80px;
+  align-items: center;
+  transition: all 0.5s ease;
+  font-size: 90px;
+  margin-top: 20px;
+}
+
+.email :hover {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(720deg);
+}
+
+/* Footer */
+
+footer {
+  padding: 80px 15px;
+  background-color: #0c0c17;
+}
+
+footer .logo {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 16px;
+}
+
+footer .social a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-size: 30px;
+  width: 40px;
+}
+
+footer .social a:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+footer .social a .fa-instagram:hover {
+  color: #9a2970;
+}
+
+footer .social a .fa-facebook:hover {
+  color: #3b5998;
+}
+
+footer .social a .fa-twitter:hover {
+  color: #00acee;
+}
+
+footer .social .fa-linkedin:hover {
+  color: #0e76a8;
+}
+
+footer .social .fa-github:hover {
+  color: #6cc644;
+}
+
+/* Copyright */
+
+.copyright {
+  background-color: #0c0c17;
+  border-top: 1px solid #1d1d27;
+  padding: 15px;
+}
+
+.copyright p {
+  color: #838383;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1025) {
+
+  .iphone-11-pro {
+     background: url("./dev.jpg") center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 4.4rem;
+  }
+
+  .title {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-top: 55%;
+}
+
+
+  .title-heading {
+    font-size: 4.3rem;
+  }
+
+  .title-sub-heading {
+    font-size: 3.4rem;
+  }
+  
+}
+
+@media (max-width: 991px) {
+  .home .home-content .block h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  * {
+    margin: 0;
+  }
+
+  header {
+    height: 4.8rem;
+    transition: background 0.36s cubic-bezier(0.32, 0.08, 0.34, 1),
+      height 0.56s cubic-bezier(0.32, 0.08, 0.34, 1);
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  .iphone-11-pro {
+    margin-top: 4.8rem;
+  }
+
+  .nav-list {
+    margin: 0;
+  }
+
+  .nav-list-mobile {
+    display: flex;
+  }
+
+  .nav-item {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-item-hidden {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: relative;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .line {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    position: absolute;
+    width: 2.2rem;
+    height: 1px;
+    background-color: #fff;
+    transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .line-top {
+    margin-top: 3px;
+  }
+
+  .line-middle {
+    margin-top: -9px;
+  }
+
+  .line-bottom {
+    margin-top: 1.6rem;
+  }
+
+  .active .line-top {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .active .line-middle {
+    margin-top: 0;
+    display: none;
+  }
+
+  .active .line-bottom {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  header.active {
+    height: 100%;
+    background-color: black;
+  }
+
+  .nav-link-apple {
+    width: 1.8rem;
+    height: 4.8rem;
+    position: relative;
+    z-index: 1500;
+  }
+
+  .nav-link-bag {
+    width: 1.6rem;
+    height: 4.8rem;
+    transition: opacity 3s;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-link {
+    font-size: 1.7rem;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .nav-list-larger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    padding: 10.5rem 5rem;
+    z-index: 1000;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+
+  .active .nav-list-larger {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .active .nav-link-bag {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .nav-list-larger .nav-item {
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-list-larger .nav-item:nth-child(9) {
+    border-bottom: none;
+  }
+
+  .active .nav-list-larger .nav-item {
+    animation: fadeIn 1s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .iphone-11-pro {
+     background: url("./dev.jpg") center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 4.4rem;
+  }
+
+  .title {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-top: 35%;
+}
+
+  .title img {
+    width: 20rem;
+  }
+
+  .title-heading {
+    font-size: 5.3rem;
+    line-height: 1.07143;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .title-sub-heading {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    letter-spacing: 1.7rem;
+    font-weight: 400;
+  }
+
+  .cv-btn {
+    padding-top: 2.6rem;
+    text-align: center;
+  }
+
+  .cv-btn a {
+    border-radius: 4px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 40px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 450;
+    transition: all 0.5s ease;
+  }
+
+  .cv-btn a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 450;
+  }
+
+  .about-me .about-content .text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  .about-me .about-content .img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .values .service-content .box {
+    background-color: #ffffff;
+    padding: 30px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .skills .skills-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0px;
+  }
+  .skills .img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .portfolio .portfolio-gallery .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    padding: 10px;
+  }
+  .reactProject {
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  * {
+    margin: 0;
+  }
+
+  .iphone-11-pro {
+     background: url("./dev.jpg") center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 4.4rem;
+  }
+
+  .title {
+    padding-top: 38%;
+  }
+
+  .title img {
+    width: 13rem;
+    margin-bottom: 10px;
+  }
+
+  .title-heading {
+    font-size: 4rem;
+    line-height: 1.07143;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .title-sub-heading {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    letter-spacing: 1.2rem;
+    font-weight: 400;
+  }
+
+  .cv-btn {
+    padding-top: 2.6rem;
+    text-align: center;
+  }
+
+  .cv-btn a {
+    border-radius: 4px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 450;
+    transition: all 0.5s ease;
+  }
+
+  .cv-btn a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 450;
+  }
+
+  .section-title h1 {
+    display: inline-block;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 5px;
+    position: relative;
+  }
+
+  .about-me .section-title p.small {
+    display: block;
+    font-size: 13px;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .list {
+    margin-right: 10px;
+  }
+
+  .skills .img img {
+    display: none;
+  }
+
+  .reactProject {
+    height: auto;
+    width: auto;
+  }
+
+  .email-form {
+    width: auto;
+    background-image: url("https://akovia-yymzkigkbk.netdna-ssl.com/wp-content/uploads/2016/08/connect-background-white.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .text h5 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  footer .logo {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  footer .social {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  footer .social a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 8px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-size: 20px;
+    width: 40px;
+  }
+}
